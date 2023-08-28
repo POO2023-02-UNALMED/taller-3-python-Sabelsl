@@ -20,10 +20,8 @@ class TV:
         return self._canal
     
     def setCanal (self,canal):
-        if self._estado:
-            
+        if self._estado:   
             if ((canal >=1) and (canal <=120)):
-                #print("okkkkkkk"+str(canal))
                 self._canal = canal
         
     def getVolumen (self):
@@ -70,7 +68,7 @@ class TV:
         
     def canalDown (self):
         if self._estado:
-            if self._canal >= 1:
+            if self._canal > 1:
                 self._canal -=1
     
     def volumenUp (self):
