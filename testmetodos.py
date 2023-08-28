@@ -92,13 +92,6 @@ def testCanal():
     tv7.canalDown()
     tv7.setCanal(200)
     
-    print(tv1.getCanal())
-    print(tv2.getCanal())
-    print(tv3.getCanal())
-    print(tv4.getCanal())
-    print(tv5.getCanal())
-    print(tv6.getCanal())
-    print(tv7.getCanal())
     ok = False
     if tv1.getCanal() == 78 and \
             tv2.getCanal() == 3 and \
@@ -311,5 +304,3 @@ def testVolumenEnlazar():
         ok = True
 
     assert ok, "Hay un problema con los metodos y restricciones del cambio de canales del televisor desde el control"
-
-testCanal()
