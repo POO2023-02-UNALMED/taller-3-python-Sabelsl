@@ -26,7 +26,9 @@ class TV:
         return self._volumen
     
     def setVolumen (self,volumen):
-        self._volumen = volumen
+        if self._estado:
+            if self._volumen >=0 and self._volumen <=7:
+                self._volumen = volumen
         
     def getPrecio (self):
         return self._precio
