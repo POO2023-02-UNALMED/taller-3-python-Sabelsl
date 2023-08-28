@@ -33,11 +33,13 @@ class TV:
     
     def setPrecio (self,precio):
         self._precio = precio
-    
-    def getNumTV (self):
+        
+    @staticmethod
+    def getNumTV ():
         return TV._Tv_numTV
     
-    def setNumTV(self,numTV):
+    @staticmethod
+    def setNumTV(numTV):
         TV._Tv_numTV = numTV
         
     def getEstado (self):
