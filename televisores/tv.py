@@ -31,7 +31,7 @@ class TV:
     
     def setVolumen (self,volumen):
         if self._estado:
-            if self._volumen >=0 and self._volumen <=7:
+            if volumen >=0 and volumen <=7:
                 self._volumen = volumen
         
     def getPrecio (self):
