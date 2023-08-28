@@ -34,10 +34,10 @@ class TV:
     def setPrecio (self,precio):
         self._precio = precio
     
-    def get_numTV (self):
+    def getNumTV (self):
         return TV._Tv_numTV
     
-    def setNumTv(self,numTV):
+    def setNumTV(self,numTV):
         TV._Tv_numTV = numTV
         
     def getEstado (self):
